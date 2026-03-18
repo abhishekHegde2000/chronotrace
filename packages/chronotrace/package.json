@@ -1,0 +1,30 @@
+{
+  "name": "chronotrace",
+  "version": "1.0.0",
+  "description": "A full-stack log interceptor for React and Next.js.",
+  "main": "./dist/client/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/client/index.mjs",
+      "require": "./dist/client/index.js",
+      "types": "./dist/client/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "types": "./dist/server/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "keywords": [
+    "logging",
+    "debug",
+    "nextjs",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT"
+}
