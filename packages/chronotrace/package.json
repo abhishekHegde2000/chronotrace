@@ -9,6 +9,11 @@
       "require": "./dist/client/index.js",
       "types": "./dist/client/index.d.ts"
     },
+    "./client": {
+      "import": "./dist/client/provider.mjs",
+      "require": "./dist/client/provider.js",
+      "types": "./dist/client/provider.d.ts"
+    },
     "./server": {
       "import": "./dist/server/index.mjs",
       "require": "./dist/server/index.js",

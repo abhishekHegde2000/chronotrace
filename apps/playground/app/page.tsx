@@ -1,6 +1,21 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+  console.group("Server Side Logs");
+  console.log("This log was generated during SSR.");
+  console.warn("Be careful about SSR warnings!");
+  console.groupEnd();
+
+  useEffect(() => {
+    console.group("Client Side Logs");
+    console.log("This log was generated on the client after mount.");
+    console.error("Simulated client error!");
+    console.groupEnd();
+  }, []);
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
@@ -13,6 +28,11 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+          <button 
+            onClick={() => (window as any).downloadLogs()} 
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5">
+            Download Chronotrace Logs
+          </button>
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             To get started, edit the page.tsx file.
           </h1>
