@@ -26,5 +26,11 @@
     "react"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.19.37",
+    "@types/react": "^19.2.14",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
 }
