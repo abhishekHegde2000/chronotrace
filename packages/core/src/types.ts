@@ -1,8 +1,25 @@
-export type LogLevel = 'debug' | 'info' | 'warn' | 'error' | 'fatal';
+export type LogMethod =
+  | 'log'
+  | 'info'
+  | 'warn'
+  | 'error'
+  | 'debug'
+  | 'group'
+  | 'groupCollapsed'
+  | 'groupEnd';
+
+export interface SourceMetadata {
+  file?: string;
+  line?: number;
+  column?: number;
+}
 
 export interface LogEntry {
   timestamp: number;
-  level: LogLevel;
-  message: string;
-  payload?: unknown;
+  method: LogMethod;
+  payload: unknown[];
+  metadata?: SourceMetadata;
+  order: number;
 }
+
+export type LogEntryInput = Omit<LogEntry, 'order'>;
