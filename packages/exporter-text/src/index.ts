@@ -5,7 +5,6 @@ export interface ExporterOptions {
   extend?: LogMethod[];
 }
 
-export function generateTextExport(): string {
-  // Stub for now. Filtering and formatting logic will be implemented in exporter-text properly.
-  return 'Export not implemented yet';
-}
+export { filterLogs, resolveFilter } from './filterLogs';
+export { formatLogs } from './formatLogs';
+export { generateTextExport } from './createTextExport';
