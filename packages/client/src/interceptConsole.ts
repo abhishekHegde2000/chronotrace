@@ -4,7 +4,16 @@ import { createLogStore, type LogMethod, type SourceMetadata } from '@chronotrac
 export const logStore = createLogStore();
 
 let isIntercepted = false;
-const SUPPORTED_METHODS: LogMethod[] = ['log', 'group', 'groupCollapsed', 'groupEnd'];
+const SUPPORTED_METHODS: LogMethod[] = [
+  'log',
+  'info',
+  'warn',
+  'error',
+  'debug',
+  'group',
+  'groupCollapsed',
+  'groupEnd',
+];
 
 function getSourceMetadata(): SourceMetadata | undefined {
   const err = new Error();
