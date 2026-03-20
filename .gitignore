@@ -11,8 +11,8 @@ build
 coverage
 *.tsbuildinfo
 
-# biome
-.biome/
+# eslint
+.eslintcache
 
 # husky
 .husky/_
