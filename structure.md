@@ -5,19 +5,23 @@
     ├── apps/
     │   └── playground/
     │       ├── node_modules/
-    │       │   (29 files hidden)
+    │       │   (44 files hidden)
     │       ├── src/
     │       │   └── index.ts
     │       ├── package.json
     │       └── tsconfig.json
     ├── node_modules/
-    │   (20963 files hidden)
+    │   (22413 files hidden)
     ├── packages/
     │   ├── client/
     │   │   ├── node_modules/
-    │   │   │   (7 files hidden)
+    │   │   │   (18 files hidden)
     │   │   ├── src/
-    │   │   │   └── index.ts
+    │   │   │   ├── downloadLogs.ts
+    │   │   │   ├── index.ts
+    │   │   │   ├── interceptConsole.ts
+    │   │   │   ├── keyboardShortcut.ts
+    │   │   │   └── types.ts
     │   │   ├── package.json
     │   │   ├── tsconfig.json
     │   │   └── tsconfig.tsbuildinfo
@@ -39,10 +43,10 @@
     │       ├── package.json
     │       ├── tsconfig.json
     │       └── tsconfig.tsbuildinfo
-    ├── .eslintignore
     ├── .gitignore
     ├── .prettierignore
     ├── .prettierrc
+    ├── architecture.md
     ├── eslint.config.mjs
     ├── package.json
     ├── pnpm-lock.yaml
