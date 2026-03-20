@@ -1,0 +1,2 @@
+// Client logic scaffold
+export {};

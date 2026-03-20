@@ -1,0 +1,36 @@
+# dependencies
+node_modules
+
+# pnpm
+.pnpm-store
+pnpm-lock.yaml
+
+# build output
+dist
+build
+coverage
+*.tsbuildinfo
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editor
+.vscode/
+.idea/
+.DS_Store
+
+# operating system
+Thumbs.db
+
+# framework output
+.next
+.out

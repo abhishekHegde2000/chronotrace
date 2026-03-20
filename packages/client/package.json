@@ -1,0 +1,12 @@
+{
+  "name": "@chronotrace/client",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "echo 'build not implemented'",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@chronotrace/core": "workspace:*"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "playground",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'dev not implemented'",
+    "build": "echo 'build not implemented'"
+  },
+  "dependencies": {
+    "@chronotrace/core": "workspace:*",
+    "@chronotrace/client": "workspace:*",
+    "@chronotrace/exporter-text": "workspace:*"
+  }
+}
