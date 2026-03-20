@@ -5,17 +5,18 @@
     ├── apps/
     │   └── playground/
     │       ├── node_modules/
-    │       │   (44 files hidden)
+    │       │   (50 files hidden)
     │       ├── src/
-    │       │   └── index.ts
+    │       │   ├── index.ts
+    │       │   └── main.tsx
     │       ├── package.json
     │       └── tsconfig.json
     ├── node_modules/
-    │   (22413 files hidden)
+    │   (22426 files hidden)
     ├── packages/
     │   ├── client/
     │   │   ├── node_modules/
-    │   │   │   (18 files hidden)
+    │   │   │   (21 files hidden)
     │   │   ├── src/
     │   │   │   ├── downloadLogs.ts
     │   │   │   ├── index.ts
@@ -39,6 +40,9 @@
     │       ├── node_modules/
     │       │   (7 files hidden)
     │       ├── src/
+    │       │   ├── createTextExport.ts
+    │       │   ├── filterLogs.ts
+    │       │   ├── formatLogs.ts
     │       │   └── index.ts
     │       ├── package.json
     │       ├── tsconfig.json
