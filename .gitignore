@@ -11,6 +11,12 @@ build
 coverage
 *.tsbuildinfo
 
+# biome
+.biome/
+
+# husky
+.husky/_
+
 # environment files
 .env
 .env.*
